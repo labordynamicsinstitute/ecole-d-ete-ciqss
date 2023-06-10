@@ -37,9 +37,17 @@ widescreen: true
 
 ## From the GUI
 
-- Many people point and click
+- Many people point and click - first search
 
+[how to install packages - the GUI way](images/stata-gui-search.png)
 
+## Then see the result
+
+[how to install packages - the GUI way](images/stata-gui-search2.png)
+
+## Then click to install
+
+[how to install packages - the GUI way](images/stata-gui-install.png)
 
 ## From the command line
 
@@ -84,7 +92,7 @@ Do you know?
 
 ```
 
-## Where did it go?
+## Where DID it go?
 
 ```
 . which adoinstall
