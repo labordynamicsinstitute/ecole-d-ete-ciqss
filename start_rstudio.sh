@@ -25,4 +25,4 @@ then
   docker image inspect $dockerspace/$img 
 fi
 
-docker run -e PASSWORD=testing -v $WORKSPACE:/home/rstudio --rm -p 8787:8787 $dockerspace/$img
+docker run -e  DISABLE_AUTH=true  -v $WORKSPACE:/home/rstudio --rm -p 8787:8787 $dockerspace/$img
