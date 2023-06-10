@@ -1,8 +1,9 @@
 ---
-title: "Training for LDI Replication Lab"
+title: "École d'été 2023"
 author: 
   - "Lars Vilhuber"
-date: April 2023
+  - "Marie Connolly"
+date: juin 2023
 output: 
   ioslides_presentation:
     incremental: false
@@ -10,34 +11,15 @@ output:
     widescreen: true
 ---
 
-```{r, child=c('toc.md')}
-```
-
-## Overview
-
-::: {.columns-2}
-
-:::: {.column}
-
-Part 1:
-
-- Reproducible practices
-- The role of the template README
-
-::::
-
-:::: {.column}
-
-- Ideal directory and data structure
-- Some programming practices
-
-
-::::
-
-:::
 
 
 # Before we start
+
+## Languages
+
+- All slides are in English
+- Toutes les questions peuvent être en français
+- Toutes les réponses vont être dans la langue posée, ou en français
 
 ## Code of Conduct
 
@@ -51,20 +33,10 @@ Part 1:
 -  Focus on what is best for the community
 -  Show courtesy and respect towards other community members
 
-If you believe someone is violating the Code of Conduct, we ask that you report it to Cornell University
+If you believe someone is violating the Code of Conduct, we ask that you report it to us or QICSS/CIQSS.
 
-## Video code of conduct
 
-Specifically, for our many Zoom meetings: [Video Code of Conduct](https://github.com/labordynamicsinstitute/replicability-training/wiki/Videoconferencing-Rules-and-Etiquette)
+# Next up: Real introduction
 
-## Privacy
-
-- Your Privacy
-- Privacy of Authors
-
-See [Privacy Policy](https://labordynamicsinstitute.github.io/replicability-training-curriculum/privacy.html#privacy).
-
-# Next up: Reproducible practices
-
-[Reproducible practices](part1a.html)
+[Introduction](00-agenda.html)
 

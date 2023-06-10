@@ -5,8 +5,8 @@ dockerspace=larsvilhuber
 
 case $USER in
   vilhuber|larsvilhuber)
-  WORKSPACE=$HOME/Workspace/git
-  #WORKSPACE=$PWD
+  #WORKSPACE=$HOME/Workspace/git
+  WORKSPACE=$PWD
   ;;
   codespace)
   WORKSPACE=/workspaces

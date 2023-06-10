@@ -13,8 +13,10 @@ source("libraries.R")
 #run render
 
 rmarkdown::render("index.Rmd")
-rmarkdown::render("part1a.Rmd")
-rmarkdown::render("part1b.Rmd")
-rmarkdown::render("part2.Rmd")
-rmarkdown::render("part4.Rmd")
-rmarkdown::render("part5.Rmd")
+rmarkdown::render("01-very-imperfect-example.Rmd")
+rmarkdown::render("03-how-to-run-stata.Rmd")
+rmarkdown::render("05-how-to-structure-a-project.Rmd")
+rmarkdown::render("06-template-readme.Rmd")
+rmarkdown::render("07-data-provenance.Rmd")
+rmarkdown::render("09-licensing.Rmd")
+
