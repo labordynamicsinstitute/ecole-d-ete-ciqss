@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Part 1: A very imperfect example</title>
+  <title>Part 2: How to install Stata packages</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Part 1: A very imperfect example',
+                title: 'Part 2: How to install Stata packages',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -121,7 +121,7 @@ slide:not(.current) .plotly.html-widget{
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan" class="smaller">
+<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan">
 
 <div class="columns-2">
 <div class="column">
@@ -150,79 +150,113 @@ slide:not(.current) .plotly.html-widget{
 <div class="columns-2">
 <div class="column">
 <ul>
-<li>A Github package with a paper, code, data</li>
+<li>Stata packages need to be installed</li>
 </ul></div>
 
 <div class="column">
 <ul>
-<li><strong>Goal</strong>: Let’s reproduce!</li>
+<li>There are many ways to install them!</li>
+<li>Only a few lead to reproducible code!</li>
 </ul></div></div>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>A very imperfect example</h2></hgroup><article  id="a-very-imperfect-example">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Installing Stata packages</h2></hgroup><article  id="installing-stata-packages">
 
-</article></slide><slide class=""><hgroup><h2>A Github page</h2></hgroup><article  id="a-github-page" class="smaller">
-
-<iframe src="https://github.com/labordynamicsinstitute/very-imperfect-example" width="720" height="400px">
-
-</iframe>
-
-</article></slide><slide class=""><hgroup><h2>A Github page</h2></hgroup><article  id="a-github-page-1" class="smaller">
-
-<p><a href='images/very-imperfect-example.png' title=''>Very Imperfect Example</a></p>
-
-</article></slide><slide class=""><hgroup><h2>The &ldquo;paper&rdquo;</h2></hgroup><article  id="the-paper">
-
-<iframe src="https://github.com/labordynamicsinstitute/very-imperfect-example/blob/main/text/main.pdf" width="720" height="400px">
-
-</iframe>
-
-</article></slide><slide class=""><hgroup><h2>The &ldquo;paper&rdquo;</h2></hgroup><article  id="the-paper-1">
-
-<p><a href='images/very-imperfect-example-paper.png' title=''>Paper</a></p>
-
-</article></slide><slide class=""><hgroup><h2>Your turn</h2></hgroup><article  id="your-turn">
+</article></slide><slide class=""><hgroup><h2>From the GUI</h2></hgroup><article  id="from-the-gui">
 
 <ul>
-<li>Download the &ldquo;very imperfect example&rdquo;</li>
-<li>Reproduce Table 1</li>
-<li>You have 10 minutes</li>
+<li>Many people point and click</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Top chrono</h2></hgroup><article  id="top-chrono">
+</article></slide><slide class=""><hgroup><h2>From the command line</h2></hgroup><article  id="from-the-command-line">
 
-<p id="demo" style="text-align: center;font-size: 60px;margin-top: 0px;"></p>
+<pre >search adoinstall
+ssc install adoinstall</pre>
 
-<script>
-// Set the date we're counting down to - units are 1/1000 s
-var start = new Date().getTime() + (11 * 60 * 1000);
+</article></slide><slide class=""><hgroup><h2>From the command line</h2></hgroup><article  id="from-the-command-line-1">
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+<pre >net install st_0034, from(&quot;http://statajournal.com/sj/1/2&quot;)</pre>
 
-  // Get today's date and time
-  var now = new Date().getTime();
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>But where does it go?</h2></hgroup><article  id="but-where-does-it-go">
 
-  // Find the distance between now and the count down date
-  var distance = start - now;
+<p>Do you know?</p>
 
-  // Time calculations for days, hours, minutes and seconds
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+</article></slide><slide class=""><hgroup><h2>It goes here</h2></hgroup><article  id="it-goes-here">
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML =  minutes + "m " + seconds + "s ";
+<pre >. adopath
+  [1]  (BASE)      &quot;/usr/local/stata17/ado/base/&quot;
+  [2]  (SITE)      &quot;/usr/local/ado/&quot;
+  [3]              &quot;.&quot;
+  [4]  (PERSONAL)  &quot;~/ado/personal/&quot;
+  [5]  (PLUS)      &quot;~/ado/plus/&quot;
+  [6]  (OLDPLACE)  &quot;~/ado/&quot;
+</pre>
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "FINISHED";
-  }
-}, 1000);
-</script>
+</article></slide><slide class=""><hgroup><h2>Or here</h2></hgroup><article  id="or-here">
+
+<pre >. adopath
+  [1]  (BASE)      &quot;C:\Program Files\Stata17\ado\base/&quot;
+  [2]  (SITE)      &quot;C:\Program Files\Stata17\ado\site/&quot;
+  [3]              &quot;.&quot;
+  [4]  (PERSONAL)  &quot;C:\Users\lv39\ado\personal/&quot;
+  [5]  (PLUS)      &quot;C:\Users\lv39\ado\plus/&quot;
+  [6]  (OLDPLACE)  &quot;c:\ado/&quot;
+</pre>
+
+</article></slide><slide class=""><hgroup><h2>Where did it go?</h2></hgroup><article  id="where-did-it-go">
+
+<pre >. which adoinstall
+C:\Users\lv39\ado\plus\a\adoinstall.ado
+*! version 0.1 5Aug2020</pre>
+
+</article></slide><slide class=""><hgroup><h2>What are the problems?</h2></hgroup><article  id="what-are-the-problems">
+
+<ul>
+<li>Single place on disk where it is installed
+
+<ul>
+<li>Can you see the problem if you have multiple projects?</li>
+</ul></li>
+<li>The place where it is installed is not related to the project
+
+<ul>
+<li>How do I convey to replicators which package is needed?</li>
+<li>… and the version of the package</li>
+</ul></li>
+<li>The point-and-click or manual install are tedious</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Solution</h2></hgroup><article  id="solution">
+
+<p>Use <strong>code</strong> to install to a <strong>project-specific location</strong>.</p>
+
+</article></slide><slide class=""><hgroup><h2>Solution</h2></hgroup><article  id="solution-1">
+
+<pre >cd &quot;$rootdir&quot;
+// Remove those unnecessary places
+adopath - OLDPLACE
+adopath - PLUS
+adopath - PERSONAL
+// Add a project specific one
+cap mkdir adofiles
+adopath ++ &quot;${rootdir}/adofiles&quot;</pre>
+
+</article></slide><slide class=""><hgroup><h2>Outcome</h2></hgroup><article  id="outcome">
+
+<p>(note the search order)</p>
+
+<pre >. adopath ++ &quot;${rootdir}/adofiles&quot;
+  [1]              &quot;/path/to/project/adofiles&quot;
+  [2]  (BASE)      &quot;C:\Program Files\Stata17\ado\base/&quot;
+  [3]  (SITE)      &quot;C:\Program Files\Stata17\ado\site/&quot;
+  [4]              &quot;.&quot;</pre>
 
 </article></slide><slide class=""><hgroup><h2>Next</h2></hgroup><article  id="next">
 
-</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan-1" class="smaller">
+<p>How do we set <code>$rootdir</code> ?</p>
+
+</article></slide><slide class=""><hgroup><h2>Next</h2></hgroup><article  id="next-1">
+
+</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan-1">
 
 <div class="columns-2">
 <div class="column">

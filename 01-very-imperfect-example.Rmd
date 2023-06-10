@@ -42,6 +42,15 @@ knitr::include_url("https://github.com/labordynamicsinstitute/very-imperfect-exa
 
 ```
 
+## A Github page {.smaller}
+
+```{r github1png,echo=FALSE,include=FALSE}
+
+#webshot('https://github.com/labordynamicsinstitute/very-imperfect-example','images/example.png', cliprect = 'viewport',delay=2)
+
+```
+[Very Imperfect Example](images/very-imperfect-example.png)
+
 ## The "paper"
 
 ```{r readmeweb2,echo=FALSE}
@@ -50,6 +59,16 @@ knitr::include_url("https://github.com/labordynamicsinstitute/very-imperfect-exa
 
 ```
 
+
+## The "paper"
+
+```{r readmeweb2png,echo=FALSE,include=FALSE}
+
+#webshot("https://github.com/labordynamicsinstitute/very-imperfect-example/blob/main/text/main.pdf",'images/paper.png', cliprect = 'viewport')
+
+```
+
+[Paper](images/very-imperfect-example-paper.png)
 
 ## Your turn
 
@@ -64,7 +83,7 @@ knitr::include_url("https://github.com/labordynamicsinstitute/very-imperfect-exa
 
 <script>
 // Set the date we're counting down to - units are 1/1000 s
-var start = new Date().getTime() + (10 * 60 * 1000);
+var start = new Date().getTime() + (11 * 60 * 1000);
 
 // Update the count down every 1 second
 var x = setInterval(function() {

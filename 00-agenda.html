@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Part 1: A very imperfect example</title>
+  <title>École d’été 2023 - Introduction</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Part 1: A very imperfect example',
+                title: 'École d’été 2023 - Introduction',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -121,7 +121,7 @@ slide:not(.current) .plotly.html-widget{
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan" class="smaller">
+<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan">
 
 <div class="columns-2">
 <div class="column">
@@ -145,84 +145,192 @@ slide:not(.current) .plotly.html-widget{
 <li>16:00 Try it out / Fin</li>
 </ul></div></div>
 
-</article></slide><slide class=""><hgroup><h2>Overview</h2></hgroup><article  id="overview">
-
-<div class="columns-2">
-<div class="column">
-<ul>
-<li>A Github package with a paper, code, data</li>
-</ul></div>
-
-<div class="column">
-<ul>
-<li><strong>Goal</strong>: Let’s reproduce!</li>
-</ul></div></div>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>A very imperfect example</h2></hgroup><article  id="a-very-imperfect-example">
-
-</article></slide><slide class=""><hgroup><h2>A Github page</h2></hgroup><article  id="a-github-page" class="smaller">
-
-<iframe src="https://github.com/labordynamicsinstitute/very-imperfect-example" width="720" height="400px">
-
-</iframe>
-
-</article></slide><slide class=""><hgroup><h2>A Github page</h2></hgroup><article  id="a-github-page-1" class="smaller">
-
-<p><a href='images/very-imperfect-example.png' title=''>Very Imperfect Example</a></p>
-
-</article></slide><slide class=""><hgroup><h2>The &ldquo;paper&rdquo;</h2></hgroup><article  id="the-paper">
-
-<iframe src="https://github.com/labordynamicsinstitute/very-imperfect-example/blob/main/text/main.pdf" width="720" height="400px">
-
-</iframe>
-
-</article></slide><slide class=""><hgroup><h2>The &ldquo;paper&rdquo;</h2></hgroup><article  id="the-paper-1">
-
-<p><a href='images/very-imperfect-example-paper.png' title=''>Paper</a></p>
-
-</article></slide><slide class=""><hgroup><h2>Your turn</h2></hgroup><article  id="your-turn">
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details">
 
 <ul>
-<li>Download the &ldquo;very imperfect example&rdquo;</li>
-<li>Reproduce Table 1</li>
-<li>You have 10 minutes</li>
+<li>9:00 Bienvenu</li>
+<li>9:15 Description de l’agenda pour les deux jours</li>
+<li>9:30 Discussion sur les pré-requis technique, possiblement formation d’équipe</li>
+<li>9:45 Description de l’exemple très imparfait
+
+<ul>
+<li><a href='https://github.com/labordynamicsinstitute/very-imperfect-example' title=''>github.com/labordynamicsinstitute/very-imperfect-example</a></li>
+<li>Comment télécharger de Github</li>
+<li>Repliquons!</li>
+</ul></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Top chrono</h2></hgroup><article  id="top-chrono">
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-1">
 
-<p id="demo" style="text-align: center;font-size: 60px;margin-top: 0px;"></p>
+<ul>
+<li>10:15 Discussion de la réussite de l’exercise</li>
+<li>10:30 Pause</li>
+<li>10:45 Commençons par la fin: (live/ slides coming)
 
-<script>
-// Set the date we're counting down to - units are 1/1000 s
-var start = new Date().getTime() + (11 * 60 * 1000);
+<ul>
+<li>Documentation of Stata packages</li>
+<li>How to install them (by script)</li>
+<li>How not to install them (by hand)</li>
+<li>How to better install them (using local project directory)</li>
+<li>Suggestion: how to cite them!</li>
+</ul></li>
+</ul>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-2">
 
-  // Get today's date and time
-  var now = new Date().getTime();
+<ul>
+<li>11:15 Next: How to run Stata
 
-  // Find the distance between now and the count down date
-  var distance = start - now;
+<ul>
+<li>Table ronde: comment est-ce que tu fais rouler Stata? (15 min)</li>
+<li>Why problematic: working directory</li>
+<li>Concept of the working directory</li>
+<li>How to dynamically use the working directory</li>
+<li>Alternatives: here package in other programming languages (Matlab, R), also in Stata
 
-  // Time calculations for days, hours, minutes and seconds
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+<ul>
+<li>Stata <a href='https://github.com/korenmiklos/here' title=''>https://github.com/korenmiklos/here</a></li>
+<li>R <a href='https://here.r-lib.org/' title=''>https://here.r-lib.org/</a> <a href='https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf' title=''>https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf</a></li>
+<li>Keep it simple: the right-click method (Windows), the command line method (Mac/Linux)</li>
+</ul></li>
+<li><a href='https://labordynamicsinstitute.github.io/ldilab-manual/96-02-running-stata-code.html' title=''>https://labordynamicsinstitute.github.io/ldilab-manual/96-02-running-stata-code.html</a></li>
+<li>Try it out (30 minutes)</li>
+</ul></li>
+</ul>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML =  minutes + "m " + seconds + "s ";
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-3">
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "FINISHED";
-  }
-}, 1000);
-</script>
+<ul>
+<li>12:30 Lunch (1h)</li>
+</ul>
 
-</article></slide><slide class=""><hgroup><h2>Next</h2></hgroup><article  id="next">
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-4">
 
-</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan-1" class="smaller">
+<ul>
+<li>13:30 Side-note: how to run things in the cloud (90 minutes)
+
+<ul>
+<li>C’est quoi, le cloud?</li>
+<li>Python in the cloud (GH CS) <a href='https://github.com/codespaces' title=''>https://github.com/codespaces</a></li>
+<li>Stata in the cloud! (GH CS, CodeOcean, Wholetale) <a href='https://github.com/labordynamicsinstitute/codespaces-stata-skeleton' title=''>https://github.com/labordynamicsinstitute/codespaces-stata-skeleton</a> , <a href='https://wholetale.org/' title=''>https://wholetale.org/</a> , <a href='https://codeocean.com/' title=''>https://codeocean.com/</a></li>
+<li>Why in the cloud?</li>
+<li>Try it out (need Github Account or CodeOcean Account or WholeTale account)</li>
+</ul></li>
+<li>15:00 Break</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-5">
+
+<ul>
+<li>15:15 How to structure a project (Marie) (45 minutes)</li>
+<li>16:00 Try it out / Fin</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Day 2</h2></hgroup><article  id="day-2">
+
+</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan-1">
+
+<ul>
+<li>9:00 Documenting it all: the template README (Marie) (60 minutes)</li>
+<li>10:00 Data provenance: why did it fail</li>
+<li>10:30 When data cleaning is critical</li>
+<li>11:00 Completing the template README</li>
+<li>12:00 Break</li>
+<li>13:00 Creating a replication package</li>
+<li>13:30 Depositing a replication package</li>
+<li>14:30 Break</li>
+<li>14:45 Wrap-up</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-6">
+
+<ul>
+<li>9:00 Documenting it all: the template README (Marie) (60 minutes)
+
+<ul>
+<li><a href='https://social-science-data-editors.github.io/template_README/' title=''>https://social-science-data-editors.github.io/template_README/</a></li>
+<li>Structure</li>
+<li>Code, how to run</li>
+</ul></li>
+<li>10:00 Data provenance: why did it fail
+
+<ul>
+<li>Data citations (15 min)</li>
+<li>Data provenance: beyond citations
+
+<ul>
+<li>Complex examples: IPUMS, WDI, DHS</li>
+</ul></li>
+<li>Source of the US Census data</li>
+<li>Authoritative vs. random sources</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-7">
+
+<ul>
+<li>10:30 When data cleaning is critical
+
+<ul>
+<li>Your project doesn’t start with the analysis data (no &ldquo;trust me&rdquo;)</li>
+<li>Find the problem!</li>
+<li>Try it out: 30 minutes</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-8">
+
+<ul>
+<li>11:00 Completing the template README
+
+<ul>
+<li>Documenting data provenance</li>
+<li>The role of licenses and permissions</li>
+</ul></li>
+<li>12:00 Break (1h)</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-9">
+
+<ul>
+<li>13:00 Creating a replication package
+
+<ul>
+<li>So you have it all?</li>
+<li>Let’s try that again: Run your neighbor’s replication package in 10 minutes</li>
+<li>(30 minutes)</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-10">
+
+<ul>
+<li>13:30 Depositing a replication package
+
+<ul>
+<li><pre >https://labordynamicsinstitute.github.io/tutorial-data-sharing-archiving-2021/ </pre></li>
+<li>Gentle introduction to Zenodo (sandbox) (or Dataverse)</li>
+<li>Uploading - Zipfiles vs. individual files?</li>
+<li>Metadata</li>
+<li>Pressing publish - what happens?</li>
+<li>Updating a replication package</li>
+</ul></li>
+<li>14:30 Break</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Details</h2></hgroup><article  class="smaller" id="details-11">
+
+<ul>
+<li>14:45 Wrap-up
+
+<ul>
+<li>Group discussion</li>
+<li>Questions</li>
+</ul></li>
+<li>16:00 (ou plus tôt): Fin.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan-2">
 
 <div class="columns-2">
 <div class="column">

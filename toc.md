@@ -11,7 +11,7 @@
 - 9:45 [Description de l'exemple très imparfait](01-very-imperfect-example.html)
 - 10:15 Discussion de la réussite de l'exercise
 - 10:30 Pause
-- 10:45 Commençons par la fin: (live/ slides coming)
+- 10:45 Commençons par la fin: [how to install Stata packages](02-how-to-install-Stata-packages.html)
 
 
 ::::
