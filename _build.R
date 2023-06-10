@@ -13,7 +13,9 @@ source("libraries.R")
 #run render
 
 rmarkdown::render("index.Rmd")
+rmarkdown::render("00-agenda.Rmd")
 rmarkdown::render("01-very-imperfect-example.Rmd")
+rmarkdown::render("02-how-to-install-Stata-packages.Rmd")
 rmarkdown::render("03-how-to-run-stata.Rmd")
 rmarkdown::render("05-how-to-structure-a-project.Rmd")
 rmarkdown::render("06-template-readme.Rmd")
