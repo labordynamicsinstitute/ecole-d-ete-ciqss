@@ -1,6 +1,6 @@
 #!/bin/bash
 PWD=$(pwd)
-repo=${PWD##*/}
+img=replicability-training-presentation
 dockerspace=larsvilhuber
 
 case $USER in
@@ -18,19 +18,11 @@ esac
 BUILD=no
 arg1=$1
 
-docker pull $dockerspace/$repo 
+docker pull $dockerspace/$img 
 if [[ $? == 1 ]]
 then
   ## maybe it's local only
-  docker image inspect $dockerspace/$repo > /dev/null
-  [[ $? == 0 ]] && BUILD=no || BUILD=yes
-fi
-# override
-[[ "$arg1" == "force" ]] && BUILD=yes
-
-if [[ "$BUILD" == "yes" ]]; then
-DOCKER_BUILDKIT=1 docker build . -t $dockerspace/$repo
-nohup docker push $dockerspace/$repo &
+  docker image inspect $dockerspace/$img 
 fi
 
-docker run -e PASSWORD=testing -v $WORKSPACE:/home/rstudio --rm -p 8787:8787 $dockerspace/$repo
+docker run -e PASSWORD=testing -v $WORKSPACE:/home/rstudio --rm -p 8787:8787 $dockerspace/$img
