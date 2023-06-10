@@ -23,6 +23,7 @@ jobs:
           
           
       # send it to gh-pages
+      # Remember to give the "action-bot" write permissions under "Actions" (in Settings)
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
