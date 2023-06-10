@@ -1,0 +1,138 @@
+---
+title: "École d'été 2023 - Introduction"
+author: 
+  - "Lars Vilhuber"
+  - "Marie Connolly"
+date: "`r Sys.Date()`"
+output: 
+  ioslides_presentation:
+  incremental: false
+self-included: true
+widescreen: true
+---
+  
+```{r, child=c('toc.md')}
+```
+
+## Details {.smaller}
+
+- 9:00 Bienvenu
+- 9:15 Description de l'agenda pour les deux jours 
+- 9:30 Discussion sur les pré-requis technique, possiblement formation d'équipe
+- 9:45 Description de l'exemple très imparfait 
+  - [github.com/labordynamicsinstitute/very-imperfect-example](https://github.com/labordynamicsinstitute/very-imperfect-example)
+  - Comment télécharger de Github
+  - Repliquons!
+
+## Details {.smaller}
+
+- 10:15 Discussion de la réussite de l'exercise
+- 10:30 Pause
+- 10:45 Commençons par la fin: (live/ slides coming)
+  - Documentation of Stata packages
+  - How to install them (by script)
+  - How not to install them (by hand)
+  - How to better install them (using local project directory)
+  - Suggestion: how to cite them!
+
+
+## Details {.smaller}
+
+- 11:15 Next: How to run Stata
+  - Table ronde: comment est-ce que tu fais rouler Stata? (15 min)
+  - Why problematic: working directory
+  - Concept of the working directory 
+  - How to dynamically use the working directory
+  - Alternatives: here package in other programming languages (Matlab, R), also in Stata 
+    - Stata https://github.com/korenmiklos/here 
+    - R https://here.r-lib.org/ https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf 
+    - Keep it simple: the right-click method (Windows), the command line method (Mac/Linux)
+  - https://labordynamicsinstitute.github.io/ldilab-manual/96-02-running-stata-code.html 
+  - Try it out (30 minutes)
+
+
+## Details {.smaller}
+
+- 12:30 Lunch (1h)
+
+
+
+## Details {.smaller}
+
+- 13:30 Side-note: how to run things in the cloud (90 minutes)
+  - C'est quoi, le cloud?
+  - Python in the cloud (GH CS) https://github.com/codespaces 
+  - Stata in the cloud! (GH CS, CodeOcean, Wholetale) https://github.com/labordynamicsinstitute/codespaces-stata-skeleton , https://wholetale.org/ , https://codeocean.com/
+  - Why in the cloud?
+  - Try it out (need Github Account or CodeOcean Account or WholeTale account)
+- 15:00 Break
+
+
+## Details {.smaller}
+
+- 15:15 How to structure a project (Marie) (45 minutes)
+- 16:00 Try it out / Fin
+
+
+# Day 2
+
+
+```{r, child=c('toc2.md')}
+```
+
+## Details {.smaller}
+
+- 9:00 Documenting it all: the template README (Marie) (60 minutes)
+  - [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/)
+  - Structure
+  - Code, how to run
+- 10:00 Data provenance: why did it fail
+  - Data citations (15 min)
+  - Data provenance: beyond citations
+    - Complex examples: IPUMS, WDI, DHS
+  - Source of the US Census data 
+  - Authoritative vs. random sources
+
+## Details {.smaller}
+
+- 10:30 When data cleaning is critical
+  - Your project doesn't start with the analysis data (no "trust me")
+  - Find the problem!
+  - Try it out: 30 minutes
+
+## Details {.smaller}
+
+- 11:00 Completing the template README
+  - Documenting data provenance
+  - The role of licenses and permissions 
+- 12:00 Break (1h)
+
+## Details {.smaller}
+
+- 13:00 Creating a replication package
+  - So you have it all?
+  - Let's try that again: Run your neighbor's replication package in 10 minutes
+  - (30 minutes)
+  
+## Details {.smaller}
+
+- 13:30 Depositing a replication package
+  - 	https://labordynamicsinstitute.github.io/tutorial-data-sharing-archiving-2021/ 
+  - Gentle introduction to Zenodo (sandbox) (or Dataverse)
+  - Uploading - Zipfiles vs. individual files?
+  - Metadata
+  - Pressing publish - what happens?
+  - Updating a replication package
+- 14:30  Break
+
+## Details {.smaller}
+
+- 14:45 Wrap-up
+  - Group discussion
+  - Questions
+- 16:00 (ou plus tôt): Fin.
+
+
+```{r, child=c('toc.md')}
+```
+
