@@ -169,13 +169,44 @@ pre code {
 
 <div id="running-code-in-stata" class="section level1">
 <h1>Running Code in Stata</h1>
-<p>Although, there are plenty of ways to run code in Stata, our goal with these instructions is to show the easiest way to do it, by minimizing both the manual steps replicators have to go through and the chance of making a mistake that prevents a successful run.</p>
-<p>In essence, these instructions show how to deal with the three most common actions that replicators have to undertake when running Stata code:</p>
+<div id="how-do-you-run-a-stata-program" class="section level2">
+<h2>How do YOU run a Stata program?</h2>
+<p id="demo" style="text-align: center;font-size: 60px;margin-top: 0px;"></p>
+
+<script>
+// Set the date we're counting down to - units are 1/1000 s
+var start = new Date().getTime() + (11 * 60 * 1000);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = start - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML =  minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "FINISHED";
+  }
+}, 1000);
+</script>
+<p>Goals</p>
 <ol style="list-style-type: decimal">
 <li>Making sure that paths (i.e., something like “<code>Mycomputer/Documents/Workspace/</code>”) in the .do files (Stata scripts) reflect the appropriate location of code, data, and output in the computer where the code is run.</li>
 <li>Installing user-written functions, programs, or packages that are necessary to do computations and produce tables/figures.</li>
 <li>Creating .log files (files that record, in this case, Stata output) of the replication attempts.</li>
 </ol>
+</div>
 <div id="step-1-check-for-a-master-.do-file" class="section level2">
 <h2>Step 1: check for a “master” .do file</h2>
 <blockquote>

@@ -37,9 +37,17 @@ widescreen: true
 
 ## From the GUI
 
-- Many people point and click
+- Many people point and click - first search
 
+[how to install packages - the GUI way](images/stata-gui-search.png)
 
+## Then see the result
+
+[how to install packages - the GUI way](images/stata-gui-search2.png)
+
+## Then click to install
+
+[how to install packages - the GUI way](images/stata-gui-install.png)
 
 ## From the command line
 
@@ -84,7 +92,7 @@ Do you know?
 
 ```
 
-## Where did it go?
+## Where DID it go?
 
 ```
 . which adoinstall
@@ -130,6 +138,59 @@ adopath ++ "${rootdir}/adofiles"
   [3]  (SITE)      "C:\Program Files\Stata17\ado\site/"
   [4]              "."
 ```
+
+## Side-note: should you cite Stata packages?
+
+Some of the most common Stata packages are heavily used:
+
+```
+. ssc, hot
+
+ Rank   # hits    Package       Author(s)
+  ----------------------------------------------------------------------
+     1  98781.5    outreg2       Roy Wada                                
+     2  82108.0    distinct      Gary Longton, Nicholas J. Cox           
+     3  76510.6    estout        Ben Jann                                
+     4  75270.7    geodist       Robert Picard                           
+     5  73775.4    labutil       Nicholas J. Cox                    
+```
+
+## Econ papers use different packages
+
+| Package | Percent | 
+|---------|---------|
+|    estout        |  14.02  |
+|   outreg2        |   8.88  |
+|   reghdfe        |   6.54  |
+|    ftools        |   5.61  |
+|  coefplot        |   5.14  |
+|  outtable        |   2.34  |
+|   parmest        |   2.34  |
+|    ivreg2        |   1.87  |
+
+## What is a software citation?
+
+> Ben Jann, 2004. "ESTOUT: Stata module to make regression tables," Statistical Software Components S439301, Boston College Department of Economics, revised 12 Feb 2023. 
+
+
+## Why does it matter?
+
+Citations are the currency in the sciences
+
+[Acemoglu Google Scholar page](images/google-scholar-acemoglu.png)
+
+## We cannot really measure who relies on software packages
+
+We only know the relative frequency because 
+
+- we downloaded every AEA package, 
+- ran it, 
+- determined which packages were missing, installed them, and ran again...
+- and then counted them. 
+
+# You should cite software packages!
+
+We will get back to citations, of data, later.
 
 ## Next
 

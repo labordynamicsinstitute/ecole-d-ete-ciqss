@@ -9,7 +9,7 @@
 
 
 
-  <meta name="date" content="2023-06-10" />
+  <meta name="date" content="2023-06-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -117,11 +117,11 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2023-06-10</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2023-06-11</p>
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan">
+<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan" class="smaller">
 
 <div class="columns-2">
 <div class="column">
@@ -164,8 +164,18 @@ slide:not(.current) .plotly.html-widget{
 </article></slide><slide class=""><hgroup><h2>From the GUI</h2></hgroup><article  id="from-the-gui">
 
 <ul>
-<li>Many people point and click</li>
+<li>Many people point and click - first search</li>
 </ul>
+
+<p><a href='images/stata-gui-search.png' title=''>how to install packages - the GUI way</a></p>
+
+</article></slide><slide class=""><hgroup><h2>Then see the result</h2></hgroup><article  id="then-see-the-result">
+
+<p><a href='images/stata-gui-search2.png' title=''>how to install packages - the GUI way</a></p>
+
+</article></slide><slide class=""><hgroup><h2>Then click to install</h2></hgroup><article  id="then-click-to-install">
+
+<p><a href='images/stata-gui-install.png' title=''>how to install packages - the GUI way</a></p>
 
 </article></slide><slide class=""><hgroup><h2>From the command line</h2></hgroup><article  id="from-the-command-line">
 
@@ -202,7 +212,7 @@ ssc install adoinstall</pre>
   [6]  (OLDPLACE)  &quot;c:\ado/&quot;
 </pre>
 
-</article></slide><slide class=""><hgroup><h2>Where did it go?</h2></hgroup><article  id="where-did-it-go">
+</article></slide><slide class=""><hgroup><h2>Where DID it go?</h2></hgroup><article  id="where-did-it-go">
 
 <pre >. which adoinstall
 C:\Users\lv39\ado\plus\a\adoinstall.ado
@@ -250,13 +260,95 @@ adopath ++ &quot;${rootdir}/adofiles&quot;</pre>
   [3]  (SITE)      &quot;C:\Program Files\Stata17\ado\site/&quot;
   [4]              &quot;.&quot;</pre>
 
+</article></slide><slide class=""><hgroup><h2>Side-note: should you cite Stata packages?</h2></hgroup><article  id="side-note-should-you-cite-stata-packages">
+
+<p>Some of the most common Stata packages are heavily used:</p>
+
+<pre >. ssc, hot
+
+ Rank   # hits    Package       Author(s)
+  ----------------------------------------------------------------------
+     1  98781.5    outreg2       Roy Wada                                
+     2  82108.0    distinct      Gary Longton, Nicholas J. Cox           
+     3  76510.6    estout        Ben Jann                                
+     4  75270.7    geodist       Robert Picard                           
+     5  73775.4    labutil       Nicholas J. Cox                    </pre>
+
+</article></slide><slide class=""><hgroup><h2>Econ papers use different packages</h2></hgroup><article  id="econ-papers-use-different-packages">
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left">Package</th>
+<th align="left">Percent</th>
+</tr>
+<tr class="odd">
+<td align="left">estout</td>
+<td align="left">14.02</td>
+</tr>
+<tr class="even">
+<td align="left">outreg2</td>
+<td align="left">8.88</td>
+</tr>
+<tr class="odd">
+<td align="left">reghdfe</td>
+<td align="left">6.54</td>
+</tr>
+<tr class="even">
+<td align="left">ftools</td>
+<td align="left">5.61</td>
+</tr>
+<tr class="odd">
+<td align="left">coefplot</td>
+<td align="left">5.14</td>
+</tr>
+<tr class="even">
+<td align="left">outtable</td>
+<td align="left">2.34</td>
+</tr>
+<tr class="odd">
+<td align="left">parmest</td>
+<td align="left">2.34</td>
+</tr>
+<tr class="even">
+<td align="left">ivreg2</td>
+<td align="left">1.87</td>
+</tr>
+</table>
+
+</article></slide><slide class=""><hgroup><h2>What is a software citation?</h2></hgroup><article  id="what-is-a-software-citation">
+
+<blockquote>
+<p>Ben Jann, 2004. &ldquo;ESTOUT: Stata module to make regression tables,&rdquo; Statistical Software Components S439301, Boston College Department of Economics, revised 12 Feb 2023.</p>
+</blockquote>
+
+</article></slide><slide class=""><hgroup><h2>Why does it matter?</h2></hgroup><article  id="why-does-it-matter">
+
+<p>Citations are the currency in the sciences</p>
+
+<p><a href='images/google-scholar-acemoglu.png' title=''>Acemoglu Google Scholar page</a></p>
+
+</article></slide><slide class=""><hgroup><h2>We cannot really measure who relies on software packages</h2></hgroup><article  id="we-cannot-really-measure-who-relies-on-software-packages">
+
+<p>We only know the relative frequency because</p>
+
+<ul>
+<li>we downloaded every AEA package,</li>
+<li>ran it,</li>
+<li>determined which packages were missing, installed them, and ran again…</li>
+<li>and then counted them.</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>You should cite software packages!</h2></hgroup><article  id="you-should-cite-software-packages">
+
+<p>We will get back to citations, of data, later.</p>
+
 </article></slide><slide class=""><hgroup><h2>Next</h2></hgroup><article  id="next">
 
 <p>How do we set <code>$rootdir</code> ?</p>
 
 </article></slide><slide class=""><hgroup><h2>Next</h2></hgroup><article  id="next-1">
 
-</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan-1">
+</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan-1" class="smaller">
 
 <div class="columns-2">
 <div class="column">

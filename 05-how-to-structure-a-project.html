@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Part 1: Template README and Reproducible Practices</title>
+  <title>Part 5: Structure of a project</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -9,7 +9,7 @@
 
 
 
-  <meta name="date" content="2023-06-10" />
+  <meta name="date" content="2023-06-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Part 1: Template README and Reproducible Practices',
+                title: 'Part 5: Structure of a project',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -31,6 +31,14 @@
       presenters: [
             {
         name:  'Lars Vilhuber' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            {
+        name:  'Marie Connolly' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -172,11 +180,11 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2023-06-10</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2023-06-11</p>
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  class="smaller" id="the-plan">
+<slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan" class="smaller">
 
 <div class="columns-2">
 <div class="column">
@@ -204,11 +212,8 @@ slide:not(.current) .plotly.html-widget{
 
 <div class="columns-2">
 <div class="column">
-<p>Part 1:</p>
-
 <ul>
 <li><strong>Reproducible practices</strong></li>
-<li>The role of the template README</li>
 </ul></div>
 
 <div class="column">
@@ -216,20 +221,6 @@ slide:not(.current) .plotly.html-widget{
 <li>Ideal directory and data structure</li>
 <li>Some programming practices</li>
 </ul></div></div>
-
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Reproducible practices</h2></hgroup><article  id="reproducible-practices">
-
-</article></slide><slide class=""><hgroup><h2>Version your code and your results</h2></hgroup><article  id="version-your-code-and-your-results">
-
-<ul>
-<li>Use versioning</li>
-<li>If available, use <code>git</code>
-
-<ul>
-<li>If not available, request <code>git</code></li>
-<li>If not, use regular backups (scripted, automated)</li>
-</ul></li>
-</ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Part 1 </h2><h3> Ideal structure</h3></hgroup><article  id="part-1-ideal-structure">
 
@@ -437,7 +428,7 @@ use &quot;$data/path/data.dta&quot;</pre></div></div></div>
      /taxes          (read-only)
      /wages          (read-only)</pre></div></div>
 
-</article></slide><slide class=""><hgroup><h2>Stata configuration files</h2></hgroup><article  class="smaller" id="stata-configuration-files">
+</article></slide><slide class=""><hgroup><h2>Stata configuration files</h2></hgroup><article  id="stata-configuration-files" class="smaller">
 
 <p>File structure thus becomes more complex, but fundamentally not so different:</p>
 
@@ -447,7 +438,7 @@ global outputdata &quot;/project/data/clean&quot; // this is where you would wri
 global results    &quot;/project/article&quot;    // All tables for inclusion in your paper go here
 global programs   &quot;/project/code&quot;       // All programs (which you might &quot;include&quot;) are to be found here</pre>
 
-</article></slide><slide class=""><hgroup><h2>Stata configuration files</h2></hgroup><article  class="smaller" id="stata-configuration-files-1">
+</article></slide><slide class=""><hgroup><h2>Stata configuration files</h2></hgroup><article  id="stata-configuration-files-1" class="smaller">
 
 <p>Or even more robust:</p>
 
@@ -461,9 +452,29 @@ global outputdata &quot;$project/data/clean&quot; // this is where you would wri
 global results    &quot;$project/article&quot;    // All tables for inclusion in your paper go here
 global programs   &quot;$project/code&quot;       // All programs (which you might &quot;include&quot;) are to be found here</pre>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Next up: README</h2></hgroup><article  id="next-up-readme">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Try it out!</h2></hgroup><article  id="try-it-out">
 
-<p><a href='part1b.html' title=''>Template README</a></p></article></slide>
+<ul>
+<li>Set up a directory structure</li>
+<li>Set up a simple project</li>
+<li>Share it with us!</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Tomorrow</h2></hgroup><article  id="tomorrow">
+
+</article></slide><slide class=""><hgroup><h2>The Plan</h2></hgroup><article  id="the-plan-1" class="smaller">
+
+<ul>
+<li>9:00 Documenting it all: the template README (Marie) (60 minutes)</li>
+<li>10:00 Data provenance: why did it fail</li>
+<li>10:30 When data cleaning is critical</li>
+<li>11:00 Completing the template README</li>
+<li>12:00 Break</li>
+<li>13:00 Creating a replication package</li>
+<li>13:30 Depositing a replication package</li>
+<li>14:30 Break</li>
+<li>14:45 Wrap-up</li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

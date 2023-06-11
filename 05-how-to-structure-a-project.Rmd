@@ -1,7 +1,8 @@
 ---
-title: "Part 1: Template README and Reproducible Practices"
+title: "Part 5: Structure of a project"
 author: 
   - "Lars Vilhuber"
+  - "Marie Connolly" 
 date: "`r Sys.Date()`"
 output: 
   ioslides_presentation:
@@ -19,10 +20,8 @@ output:
 
 :::: {.column}
 
-Part 1:
 
 - **Reproducible practices**
-- The role of the template README
 
 ::::
 
@@ -36,15 +35,6 @@ Part 1:
 
 :::
 
-# Reproducible practices
-
-## Version your code and your results
-
-- Use versioning
-- If available, use `git`
-  - If not available, request `git`
-  - If not, use regular backups (scripted, automated)
-  
 # Part 1 | Ideal structure
 
 ## Generic project setup
@@ -324,9 +314,14 @@ global results    "$project/article"    // All tables for inclusion in your pape
 global programs   "$project/code"       // All programs (which you might "include") are to be found here
 ```
 
+# Try it out!
+
+- Set up a directory structure
+- Set up a simple project
+- Share it with us!
+
+# Tomorrow
 
 
-# Next up: README
-
-[Template README](part1b.html)
-
+```{r, child=c('toc2.md')}
+```
