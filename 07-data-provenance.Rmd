@@ -1,7 +1,8 @@
 ---
-title: "Part 2: Guidance on data citations"
+title: "Part 7: Data citations and Provenance"
 author: 
   - "Lars Vilhuber"
+  - "Marie Connolly"
 date: "`r Sys.Date()`"
 output: 
   ioslides_presentation:
