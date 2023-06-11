@@ -39,15 +39,15 @@ widescreen: true
 
 - Many people point and click - first search
 
-[how to install packages - the GUI way](images/stata-gui-search.png)
+![how to install packages - the GUI way](images/stata-gui-search.png)
 
 ## Then see the result
 
-[how to install packages - the GUI way](images/stata-gui-search2.png)
+![how to install packages - the GUI way](images/stata-gui-search2.png)
 
 ## Then click to install
 
-[how to install packages - the GUI way](images/stata-gui-install.png)
+![how to install packages - the GUI way](images/stata-gui-install.png)
 
 ## From the command line
 
@@ -177,7 +177,7 @@ Some of the most common Stata packages are heavily used:
 
 Citations are the currency in the sciences
 
-[Acemoglu Google Scholar page](images/google-scholar-acemoglu.png)
+![Acemoglu Google Scholar page](images/google-scholar-acemoglu.png)
 
 ## We cannot really measure who relies on software packages
 
