@@ -11,7 +11,7 @@ self-included: true
 widescreen: true
 ---
   
-```{r, child=c('toc.md')}
+```{r, child=c('toc2.md')}
 ```
 
 ## Overview
@@ -233,15 +233,7 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 
 In many of the READMEs you will see, not everything is as clear as what we just outlined.
 
-You will need to find the information.
+# Next
 
-# So what if the information is not there?
-
-## What if the info is not there?
-
-After lunch, we will talk about the report you will prepare.
-
-# Data Citations
-
-[Next](part2.html)
-
+```{r, child=c('toc2.md')}
+```

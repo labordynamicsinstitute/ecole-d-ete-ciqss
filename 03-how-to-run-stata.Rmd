@@ -1,8 +1,11 @@
 # Running Code in Stata
 
-Although, there are plenty of ways to run code in Stata, our goal with these instructions is to show the easiest way to do it, by minimizing both the manual steps replicators have to go through and the chance of making a mistake that prevents a successful run.
+## How do YOU run a Stata program?
 
-In essence, these instructions show how to deal with the three most common actions that replicators have to undertake when running Stata code:
+```{r, child=c('counter10.md')}
+```
+
+Goals
 
  1. Making sure that paths (i.e., something like "`Mycomputer/Documents/Workspace/`") in the .do files (Stata scripts) reflect the appropriate location of code, data, and output in the computer where the code is run.
  2. Installing user-written functions, programs, or packages that are necessary to do computations and produce tables/figures.
