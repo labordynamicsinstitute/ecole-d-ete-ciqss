@@ -1,5 +1,6 @@
 ## The Plan {.smaller}
 
+| | |
 |-|-|
 | - 9:00 Bienvenue                                                                                     | - 11:15 [How to run Stata](03-how-to-run-stata.html) |
 | - 9:15 [Description de l'agenda pour les deux jours](00-agenda.html)                                 | - 12:30 Lunch |
