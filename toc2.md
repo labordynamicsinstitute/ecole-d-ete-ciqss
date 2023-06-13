@@ -6,8 +6,8 @@
 - 10:45 [When data cleaning is critical](08-origins.html)
 - 11:45 [Licensing](09-writing-readme.html)
 - 12:00 Lunch
-- 13:00 [Let's write a README]
-- 13:30 Depositing a replication package (coming)
+- 13:00 [Let's write a README](10-writing-readme.html)
+- 13:30 [Depositing a replication package](11-archiving.html) 
 - 14:30  Break
 - 14:45 Wrap-up
 - 16:00 Fin.
