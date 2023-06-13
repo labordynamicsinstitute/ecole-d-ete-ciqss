@@ -1,5 +1,5 @@
 ---
-title: "Part 7: Data citations and Provenance"
+title: "Part 9: Licensing"
 author: 
   - "Lars Vilhuber"
   - "Marie Connolly"
@@ -12,8 +12,21 @@ output:
     widescreen: true
 ---
   
-```{r, child=c('toc.md')}
+```{r, child=c('toc2.md')}
 ```
+
+# Data provenance
+
+## Data provenance
+
+Let's complete the data provenance section of the README.
+
+- Data citation
+- Detailed provenance description
+
+## One more thing missing:
+
+License
 
 # Licenses
 

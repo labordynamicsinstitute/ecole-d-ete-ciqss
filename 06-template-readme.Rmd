@@ -152,10 +152,9 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 
 ## Rights and licenses
 
-- We attempt to check if we can OBTAIN data when authors say we cannot
-- We attempt to check if authors are ALLOWED to provide the data when the data are included
-- We may obtain data as per instructions by the authors
-  - At its simplest, we check that the URL works, and that the landing page provides enough information to obtain the data
+- can we OBTAIN data when authors say we cannot
+- journals may check if authors are ALLOWED to provide the data when the data are included
+- can we obtain data as per instructions by the authors
   
 ## Availability of data
 
@@ -165,12 +164,6 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 knitr::include_url("https://social-science-data-editors.github.io/template_README/template-README.html#summary-of-availability")
 ```
 
-## Availability of data
-
-For the AEA submissions, this information is also available (somewhat different) as part of the "Data and Code Availability Form" (DCAF):
-
-![extract DCAF](images/dcap-hand-1.png)
-
 ## Listing of data sets
 
 Data sources translate into datasets. Ideally, the README lists them:
@@ -179,7 +172,7 @@ Data sources translate into datasets. Ideally, the README lists them:
 
 ## Computational requirements
 
-To some extent, the crux of the matter: what do you need to run the analysis?
+What do you need to run the analysis?
 
 - Computers
 - Software
@@ -194,12 +187,12 @@ knitr::include_url("https://social-science-data-editors.github.io/template_READM
 
 ```
 
-## Computational requirements and your job {.build}
+## Computational requirements 
 
-You will need to figure out if you can do it (we'll get to that part).
+You will need to figure out if you can do it 
 
-- You do not need to run on your laptop
-- You should not run on your laptop if it will take too long!
+- Can you run on your laptop?
+- Do we need more resources?
 
 > Portions of the code were last run on a 12-node AWS R3 cluster, consuming 20,000 core-hours.
 
