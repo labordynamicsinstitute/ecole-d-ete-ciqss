@@ -28,26 +28,17 @@ widescreen: true
 
 - 10:15 Discussion de la réussite de l'exercice
 - 10:30 Pause
-- 10:45 Commençons par la fin: (live/ slides coming)
-  - Documentation of Stata packages
-  - How to install them (by script)
-  - How not to install them (by hand)
-  - How to better install them (using local project directory)
-  - Suggestion: how to cite them!
-
+- 10:45 Commençons par la fin: How to install Stata packages
 
 ## Détails {.smaller}
 
-- 11:15 Next: How to run Stata
-  - Table ronde: comment est-ce que tu fais rouler Stata? (15 min)
-  - Why problematic: working directory
+- 11:15 How to run Stata
   - Concept of the working directory 
   - How to dynamically use the working directory
   - Alternatives: here package in other programming languages (Matlab, R), also in Stata 
     - Stata https://github.com/korenmiklos/here 
     - R https://here.r-lib.org/ https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf 
     - Keep it simple: the right-click method (Windows), the command line method (Mac/Linux)
-  - https://labordynamicsinstitute.github.io/ldilab-manual/96-02-running-stata-code.html 
   - Try it out (30 minutes)
 
 
@@ -61,16 +52,16 @@ widescreen: true
 
 - 13:30 Side-note: how to run things in the cloud (90 minutes)
   - C'est quoi, le cloud?
-  - Python in the cloud (GH CS) https://github.com/codespaces 
-  - Stata in the cloud! (GH CS, CodeOcean, Wholetale) https://github.com/labordynamicsinstitute/codespaces-stata-skeleton , https://wholetale.org/ , https://codeocean.com/
-  - Why in the cloud?
+  - Resources:
+    - Python in the cloud ([Github Codespaces](https://github.com/codespaces), Google Colab, ...) 
+    - Stata in the cloud! ([Github Codespaces with Stata](https://github.com/labordynamicsinstitute/codespaces-stata-skeleton), [CodeOcean](https://codeocean.com), [Wholetale](https://wholetale.org)) 
   - Try it out (need Github Account or CodeOcean Account or WholeTale account)
 - 15:00 Break
 
 
 ## Détails {.smaller}
 
-- 15:15 How to structure a project (Marie) (45 minutes)
+- 15:15 How to structure a project 
 - 16:00 Try it out / Fin
 
 
@@ -82,11 +73,10 @@ widescreen: true
 
 ## Détails {.smaller}
 
-- 9:00 Documenting it all: the template README (Marie) (60 minutes)
+- 9:00 Documenting it all: the template README 
   - [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/)
-  - Structure
-  - Code, how to run
-- 10:00 Data provenance: why did it fail
+
+- 10:00 Data provenance
   - Data citations (15 min)
   - Data provenance: beyond citations
     - Complex examples: IPUMS, WDI, DHS
@@ -117,7 +107,6 @@ widescreen: true
 ## Détails {.smaller}
 
 - 13:30 Depositing a replication package
-  - 	https://labordynamicsinstitute.github.io/tutorial-data-sharing-archiving-2021/ 
   - Gentle introduction to Zenodo (sandbox) (or Dataverse)
   - Uploading - Zipfiles vs. individual files?
   - Metadata
