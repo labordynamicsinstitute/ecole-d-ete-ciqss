@@ -2,7 +2,7 @@
 
 [[ -z $1 ]] && TAG=$(date +%F) || TAG=$1
 MYHUBID=larsvilhuber
-MYIMG=replicability-training-presentation
+MYIMG=ecole-d-ete-ciqss
 
 # where are we
 weare=${PWD##*/}

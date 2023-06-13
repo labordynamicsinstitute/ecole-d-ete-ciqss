@@ -1,4 +1,4 @@
-FROM rocker/verse:4.1.0
+FROM rocker/verse:4.3.0
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -22,6 +22,6 @@ RUN apt-get update \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
 COPY libraries.R install.R
-COPY libraries-src.R install-src.R
-RUN Rscript install-src.R
+#COPY libraries-src.R install-src.R
+#RUN Rscript install-src.R
 RUN Rscript install.R

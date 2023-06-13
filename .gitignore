@@ -42,3 +42,5 @@ vignettes/*.pdf
 .config
 .local
 nohup.out
+.bash_history
+.wget* 

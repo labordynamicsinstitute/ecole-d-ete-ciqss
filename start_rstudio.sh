@@ -1,6 +1,6 @@
 #!/bin/bash
 PWD=$(pwd)
-img=replicability-training-presentation
+img=ecole-d-ete-ciqss
 dockerspace=larsvilhuber
 
 case $USER in

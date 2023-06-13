@@ -1,7 +1,7 @@
 ####################################
 # global libraries used everywhere #
 ####################################
-mran.date <- "2021-10-01"
+mran.date <- "2023-04-21"
 
 get_os <- function(){
   sysinf <- Sys.info()
@@ -33,18 +33,18 @@ pkgTest <- function(x)
 
 if (get_os()=="linux") {
 ## Rstudio Package Manager
-  options(repos = c(REPO_NAME = paste0("https://packagemanager.rstudio.com/all/__linux__/bionic/",mran.date,"+Y3JhbiwyOjQ1MjYyMTU7NDJGRDU3MTc")))
+  options(repos = c(REPO_NAME = paste0("https://packagemanager.posit.co/cran/",mran.date)))
 } else {
-## MRAN
-  options(repos=paste0("https://cran.microsoft.com/snapshot/",mran.date,"/"))
+## MRAN is dead
+# options(repos=paste0("https://cran.microsoft.com/snapshot/",mran.date,"/"))
 }
 
-global.libraries <- c("dplyr","devtools","rprojroot","tictoc","ggplot2","tidycensus","readr","webshot")
+global.libraries <- c("dplyr","devtools","rprojroot","tictoc","ggplot2","readr","webshot")
 
 # now install the rest
 results <- sapply(as.list(global.libraries), pkgTest)
 
 # webshot extra config
 
-webshot::install_phantomjs()
+#webshot::install_phantomjs()
 
