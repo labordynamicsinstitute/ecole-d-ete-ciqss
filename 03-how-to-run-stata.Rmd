@@ -1,4 +1,10 @@
-# Running Code in Stata
+---
+title: "Running Code in Stata"
+author: 
+  - "Lars Vilhuber"
+  - "Marie Connolly"
+date: "`r Sys.Date()`"
+---
 
 ## How do YOU run a Stata program?
 
