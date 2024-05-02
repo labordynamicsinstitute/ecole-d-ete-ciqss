@@ -4,11 +4,6 @@ author:
   - "Lars Vilhuber"
   - "Marie Connolly"
 date: "`r Sys.Date()`"
-output: 
-  ioslides_presentation:
-  incremental: false
-self-included: true
-widescreen: true
 ---
   
 ```{r, child=c('toc.md')}
