@@ -3,12 +3,7 @@ title: "École d'été 2024"
 author: 
   - "Lars Vilhuber"
   - "Marie Connolly"
-date: juin 2023
-output: 
-  ioslides_presentation:
-    incremental: false
-    self-included: true
-    widescreen: true
+date: mai 2024
 ---
 
 
