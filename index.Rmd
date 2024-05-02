@@ -1,5 +1,5 @@
 ---
-title: "École d'été 2023"
+title: "École d'été 2024"
 author: 
   - "Lars Vilhuber"
   - "Marie Connolly"
