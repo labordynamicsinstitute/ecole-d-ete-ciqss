@@ -1,6 +1,6 @@
-# École d'été CIQSS 2023 sur la reproducibilité
+# École d'été CIQSS  sur la reproducibilité
 
-Voir la version online à [].
+Voir la version online à [https://labordynamicsinstitute.github.io/ecole-d-ete-ciqss/](https://labordynamicsinstitute.github.io/ecole-d-ete-ciqss/).
 
 ## To run this
 
