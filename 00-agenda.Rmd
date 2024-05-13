@@ -11,53 +11,23 @@ date: "`r Sys.Date()`"
 
 ## Détails {.smaller}
 
-- 9:00 Bienvenue
-- 9:15 Description de l'agenda pour les deux jours 
-- 9:30 Discussion sur les pré-requis techniques, possiblement formation d'équipes
-- 9:45 Description de l'exemple très imparfait 
+- 13:00 Bienvenue
+- 13:15 Description de l'agenda pour les deux jours 
+- 13:30 Discussion sur les pré-requis techniques, possiblement formation d'équipes
+
+## Détails {.smaller}
+
+- 13:45 [Day One](https://thnk.ng/day1/)
+  - Parcours d'un projet de la conception à l'analyse
+
+## Détails {.smaller}
+
+- 15:15 pause
+- 15:30 Description de l'exemple très imparfait 
   - [github.com/labordynamicsinstitute/very-imperfect-example](https://github.com/labordynamicsinstitute/very-imperfect-example)
   - Comment télécharger de Github
   - Répliquons!
 
-## Détails {.smaller}
-
-- 10:15 Discussion de la réussite de l'exercice
-- 10:30 Pause
-- 10:45 Commençons par la fin: How to install Stata packages
-
-## Détails {.smaller}
-
-- 11:15 How to run Stata
-  - Concept of the working directory 
-  - How to dynamically use the working directory
-  - Alternatives: here package in other programming languages (Matlab, R), also in Stata 
-    - Stata https://github.com/korenmiklos/here 
-    - R https://here.r-lib.org/ https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf 
-    - Keep it simple: the right-click method (Windows), the command line method (Mac/Linux)
-  - Try it out (30 minutes)
-
-
-## Détails {.smaller}
-
-- 12:30 Lunch (1h)
-
-
-
-## Détails {.smaller}
-
-- 13:30 Side-note: how to run things in the cloud (90 minutes)
-  - C'est quoi, le cloud?
-  - Resources:
-    - Python in the cloud ([Github Codespaces](https://github.com/codespaces), Google Colab, ...) 
-    - Stata in the cloud! ([Github Codespaces with Stata](https://github.com/labordynamicsinstitute/codespaces-stata-skeleton), [CodeOcean](https://codeocean.com), [Wholetale](https://wholetale.org)) 
-  - Try it out (need Github Account or CodeOcean Account or WholeTale account)
-- 15:00 Break
-
-
-## Détails {.smaller}
-
-- 15:15 How to structure a project 
-- 16:00 Try it out / Fin
 
 
 # Day 2
@@ -68,10 +38,28 @@ date: "`r Sys.Date()`"
 
 ## Détails {.smaller}
 
-- 9:00 Documenting it all: the template README 
+- 9:00 Discussion de la réussite de l'exercice "Very imperfect example"
+
+- 9:30 Documenting it all: the template README 
   - [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/)
 
-- 10:00 Data provenance
+
+## Détails {.smaller}
+
+- 10:00 How to run Stata
+  - Concept of the working directory 
+  - How to dynamically use the working directory
+  - Alternatives: here package in other programming languages (Matlab, R), also in Stata 
+    - Stata https://github.com/korenmiklos/here 
+    - R https://here.r-lib.org/ https://cran.r-project.org/web/packages/rprojroot/rprojroot.pdf 
+    - Keep it simple: the right-click method (Windows), the command line method (Mac/Linux)
+  - Try it out (30 minutes)
+- 10:30 Extra: How to install Stata packages
+- 10:45 Break
+
+## Détails {.smaller}
+
+- 11:00 Data provenance
   - Data citations (15 min)
   - Data provenance: beyond citations
     - Complex examples: IPUMS, WDI, DHS
@@ -80,28 +68,25 @@ date: "`r Sys.Date()`"
 
 ## Détails {.smaller}
 
-- 10:30 When data cleaning is critical
+- 12:00 Break (1h)
+
+## Détails {.smaller}
+
+- 13:00 When data cleaning is critical
   - Your project doesn't start with the analysis data (no "trust me")
   - Find the problem!
   - Try it out: 30 minutes
 
 ## Détails {.smaller}
 
-- 11:00 Completing the template README
+- 13:30 Completing the template README
   - Documenting data provenance
   - The role of licenses and permissions 
-- 12:00 Break (1h)
 
-## Détails {.smaller}
-
-- 13:00 Creating a replication package
-  - So you have it all?
-  - Let's try that again: Run your neighbor's replication package in 10 minutes
-  - (30 minutes)
   
 ## Détails {.smaller}
 
-- 13:30 Depositing a replication package
+- 14:00 Depositing a replication package
   - Gentle introduction to Zenodo (sandbox) (or Dataverse)
   - Uploading - Zipfiles vs. individual files?
   - Metadata
@@ -111,7 +96,14 @@ date: "`r Sys.Date()`"
 
 ## Détails {.smaller}
 
-- 14:45 Wrap-up
+- 14:45 Testing it all
+  - So you have it all?
+  - Let's try that again: Run your neighbor's replication package in 10 minutes
+  - (30 minutes)
+
+## Détails {.smaller}
+
+- 15:15 Wrap-up
   - Group discussion
   - Questions
 - 16:00 (ou plus tôt): Fin.
