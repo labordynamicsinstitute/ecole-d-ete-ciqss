@@ -7,7 +7,7 @@
 - 10:45 Break
 - 11:00 [Data provenance](07-data-provenance.html)
 - 12:00 Break 
-- 13:00 When data cleaning is critical
+- 13:00 🔒[When data cleaning is critical](https://github.com/labordynamicsinstitute/very-imperfect-example-lesson/)
 - 13:30 Completing the template README
   - [Documenting data provenance](07-data-provenance.html)
   - [The role of licenses and permissions](09-licensing.html)
