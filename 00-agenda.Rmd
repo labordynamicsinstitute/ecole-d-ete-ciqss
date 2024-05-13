@@ -9,6 +9,8 @@ date: "`r Sys.Date()`"
 ```{r, child=c('toc.md')}
 ```
 
+# Day 1
+
 ## Détails {.smaller}
 
 - 13:00 Bienvenue
