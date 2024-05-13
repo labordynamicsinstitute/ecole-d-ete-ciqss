@@ -10,6 +10,10 @@ date: mai 2024
 
 # Before we start
 
+## This page
+
+[https://labordynamicsinstitute.github.io/ecole-d-ete-ciqss/](https://labordynamicsinstitute.github.io/ecole-d-ete-ciqss/)
+
 ## Languages
 
 - All slides are in English
