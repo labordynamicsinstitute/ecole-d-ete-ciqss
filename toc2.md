@@ -1,13 +1,17 @@
 ## The Plan {.smaller}
 
-- 9:00 [Documenting it all: the template README](06-template-readme.html)
-- 10:00 [Data provenance](07-data-provenance.html)
-- 10:30 Break
-- 10:45 [When data cleaning is critical](08-origins.html)
-- 11:45 [Licensing](09-writing-readme.html)
-- 12:00 Lunch
-- 13:00 [Let's write a README](10-writing-readme.html)
-- 13:30 [Depositing a replication package](11-archiving.html) 
-- 14:30  Break
-- 14:45 Wrap-up
+- 9:00 Discussion de la réussite de l'exercice "Very imperfect example"
+- 9:30 Documenting it all: [the template README](06-template-readme.html)
+- 10:00 [How to run Stata](03-how-to-run-stata.html)
+- 10:30 Extra: How to install Stata packages
+- 10:45 Break
+- 11:00 [Data provenance](07-data-provenance.html)
+- 12:00 Break 
+- 13:00 When data cleaning is critical
+- 13:30 Completing the template README
+  - [Documenting data provenance](07-data-provenance.html)
+  - [The role of licenses and permissions](09-licensing.html)
+- 14:00 [Depositing a replication package](11-archiving.html)
+- 14:45 Testing it all
+- 15:15 Wrap up
 - 16:00 Fin.
